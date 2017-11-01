@@ -5,3 +5,11 @@ machine:
 hosts:
   circlehost: 127.0.0.1
   ykbuild: 127.0.0.1
+
+dependencies:
+  override:
+    - "sudo dpkg --add-architecture i386; sudo apt-get update -qq; sudo apt-get -qq -y install gcc gperf bison flex texinfo help2man make libncurses5-dev build-essential git subversion cvs unzip whois ncurses-dev bc mercurial aptitude autotools-dev autoconf gawk sed wget curl cpio libssl-dev python-dev libc6:i386 zlib1g:i386 libstdc++6:i386 vim; sudo apt-get clean"
+
+compile:
+  override:
+    - ./build.sh
