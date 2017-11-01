@@ -10,4 +10,6 @@ cd crosstool-ng && ./bootstrap && ./configure --enable-local && make && cd ..
 mkdir src 
 mkdir ct-build
 cp devkit8000/devkit8000.ctconfig ct-build/.config 
-cd ct-build && ../crosstool-ng/ct-ng source
+cd ct-build && ../crosstool-ng/ct-ng source && ../crosstool-ng/ct-ng build && cd ..
+
+tar cvf arm-yk-linux-gnueabihf.tar x-tools && xz -9 arm-yk-linux-gnueabihf.txz 
