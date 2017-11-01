@@ -2,6 +2,8 @@
 
 set -e
 
+echo "Current Directory = $(pwd)"
+echo "Downloading kernel for Devkit8000..."
 wget --quiet https://s3-ap-southeast-1.amazonaws.com/toolchain.ykode.id/kernel/ti-linux-kernel-3.12.46.tar.gz
 git clone https://github.com/crosstool-ng/crosstool-ng
 
