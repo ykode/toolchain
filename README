@@ -1,0 +1,11 @@
+YKODE TOOLCHAIN
+===============
+
+This are crosstool-ng toolchain built for these boards
+
+TimLL Devkit8000
+==================
+
+GCC 5.5
+GLibC 2.23
+Linux Kernel Header 3.12.46-Ti 

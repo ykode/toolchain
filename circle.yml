@@ -1,0 +1,7 @@
+machine:
+  timezone:
+    Asia/Jakarta
+
+hosts:
+  circlehost: 127.0.0.1
+  ykbuild: 127.0.0.1
